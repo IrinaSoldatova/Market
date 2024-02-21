@@ -5,7 +5,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Market implements MarketBehaviour, QueueBehaviour {
-    private List<Actor> queue = new ArrayList<>();
+    private final List<Actor> queue = new ArrayList<>();
+
     @Override
     public void acceptToMarket(Actor actor) {
         System.out.println(actor.getName() + " пришел(ла) в магазин.");
